@@ -1,0 +1,29 @@
+<cg>
+  <non-bonded>
+    <name>AA</name>
+    <type1>A</type1>
+    <type2>A</type2>
+    <min>0.1</min>
+    <max>1.4</max>
+    <step>0.02</step>
+    <out_step>0.01</out_step>
+  </non-bonded>
+  <non-bonded>
+    <name>AB</name>
+    <type1>A</type1>
+    <type2>B</type2>
+    <min>0.1</min>
+    <max>1.4</max>
+    <step>0.02</step>
+    <out_step>0.01</out_step>
+  </non-bonded>
+  <non-bonded>
+    <name>BB</name>
+    <type1>B</type1>
+    <type2>B</type2>
+    <min>0.1</min>
+    <max>1.4</max>
+    <step>0.02</step>
+    <out_step>0.01</out_step>
+  </non-bonded>
+</cg>

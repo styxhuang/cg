@@ -1,0 +1,32 @@
+<cg_molecule>
+  <name>ETH</name>
+  <ident>ETH</ident>
+  <topology>
+    <cg_beads>
+      <cg_bead>
+        <name>A</name>
+        <type>A</type>
+        <mapping>com</mapping>
+        <beads>1:ETH:C1 1:ETH:H1 1:ETH:H2</beads>
+      </cg_bead>
+      <cg_bead>
+        <name>B</name>
+        <type>B</type>
+        <mapping>com</mapping>
+        <beads>1:ETH:C2 1:ETH:H3 1:ETH:H4</beads>
+      </cg_bead>
+    </cg_beads>
+    <cg_bonded>
+      <bond>
+        <name>AB</name>
+        <beads>A B</beads>
+      </bond>
+    </cg_bonded>
+  </topology>
+  <maps>
+    <map>
+      <name>com</name>
+      <weights>1 1 1</weights>
+    </map>
+  </maps>
+</cg_molecule>
