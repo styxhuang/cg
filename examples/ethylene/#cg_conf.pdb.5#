@@ -1,0 +1,8 @@
+TITLE     what a nice title
+REMARK    THIS IS A SIMULATION BOX
+CRYST1   30.000   30.000   30.000  90.00  90.00  90.00 P 1           1
+MODEL        1
+ATOM      1  A   ETH     1      16.400  15.560  14.580  1.00  0.00            
+ATOM      2  B   ETH     1      15.420  14.890  15.510  1.00  0.00            
+TER
+ENDMDL

@@ -1,0 +1,12 @@
+TITLE     Ethylene
+REMARK    THIS IS A SIMULATION BOX
+CRYST1   30.000   30.000   30.000  90.00  90.00  90.00 P 1           1
+MODEL        1
+ATOM      1  C1  ETH     1      16.390  15.560  14.930  1.00  0.00            
+ATOM      2  H1  ETH     1      15.470  15.350  14.420  1.00  0.00            
+ATOM      3  H2  ETH     1      17.330  15.770  14.380  1.00  0.00            
+ATOM      4  C2  ETH     1      15.660  14.410  15.050  1.00  0.00            
+ATOM      5  H3  ETH     1      15.590  14.840  16.130  1.00  0.00            
+ATOM      6  H4  ETH     1      15.000  15.410  15.340  1.00  0.00            
+TER
+ENDMDL

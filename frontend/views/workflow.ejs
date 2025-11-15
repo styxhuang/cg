@@ -1,0 +1,34 @@
+<div class="stepper">
+  <div class="step" data-step="upload">1 上传</div>
+  <div class="step" data-step="map">2 映射</div>
+  <div class="step" data-step="rdf">3 统计</div>
+  <div class="step" data-step="inverse">4 反演</div>
+  <div class="step" data-step="table">5 转表</div>
+  <div class="step" data-step="compare">6 对比</div>
+</div>
+<div class="grid2">
+  <div class="panel">
+    <h2>工作流</h2>
+    <div class="row">
+      <button id="btnMap" disabled>运行映射</button>
+      <button id="btnRdf" disabled>生成RDF</button>
+      <button id="btnInvConfig" disabled>生成配置</button>
+      <button id="btnInvRun" disabled>运行反演</button>
+      <button id="btnTable" disabled>导出表</button>
+    </div>
+    <div id="log" class="log"></div>
+  </div>
+  <div class="panel">
+    <h2>结构预览</h2>
+    <div id="viewer" class="viewer"></div>
+    <div class="row">
+      <button id="btnShowCG" disabled>加载CG</button>
+      <input id="rotX" type="number" value="0" />
+      <input id="rotY" type="number" value="0" />
+      <input id="scale" type="number" value="100" />
+      <button id="btnRedraw">重绘</button>
+    </div>
+    <div id="vlog" class="log"></div>
+  </div>
+</div>
+<script src="/js/workflow.js"></script>

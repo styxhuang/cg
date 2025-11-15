@@ -1,0 +1,62 @@
+<div class="card">
+  <div class="stepper">
+    <div class="step" data-step="upload">1 上传</div>
+    <div class="step" data-step="map">2 映射</div>
+    <div class="step" data-step="rdf">3 统计</div>
+    <div class="step" data-step="inverse">4 反演</div>
+    <div class="step" data-step="table">5 转表</div>
+    <div class="step" data-step="compare">6 对比</div>
+  </div>
+  <div class="grid">
+    <div class="card">
+      <h3>上传</h3>
+      <form id="uploadForm">
+        <label>拓扑文件</label>
+        <input type="file" name="top" required>
+        <label>轨迹文件</label>
+        <input type="file" name="trj" required>
+        <label>映射文件 XML</label>
+        <input type="file" name="mapping" required>
+        <div class="row">
+          <button type="submit">上传</button>
+          <div class="muted" id="ridHint"></div>
+        </div>
+      </form>
+      <div class="log" id="uploadLog"></div>
+      <div class="row" style="margin-top:10px">
+        <button id="btnMap" disabled>运行映射</button>
+        <button id="btnRdf" disabled>生成 RDF</button>
+        <button id="btnInvConfig" disabled>生成配置</button>
+        <button id="btnInvRun" disabled>运行反演</button>
+        <button id="btnTable" disabled>导出表</button>
+      </div>
+      <div class="log" id="workflowLog" style="margin-top:10px"></div>
+    </div>
+    <div class="card">
+      <h3>结构预览</h3>
+      <div class="viewer" id="viewer3d"></div>
+      <div class="row" style="margin-top:8px">
+        <button id="btnShowCG" disabled>加载 CG 到视图</button>
+        <button id="btnOverlay" disabled>叠加原子与 CG</button>
+      </div>
+      <div class="row" style="margin-top:8px">
+        <label>旋转X</label><input id="rotX" type="number" value="0" step="5" style="width:90px">
+        <label>旋转Y</label><input id="rotY" type="number" value="0" step="5" style="width:90px">
+        <label>缩放</label><input id="scale" type="number" value="100" min="10" max="300" step="10" style="width:90px">
+        <button id="btnRedraw">重绘</button>
+      </div>
+      <div class="log" id="convertLog" style="margin-top:8px"></div>
+    </div>
+  </div>
+  <div class="card" style="margin-top:16px">
+    <h3>RDF 对比</h3>
+    <div class="row" style="margin-bottom:8px">
+      <button id="btnListFiles" disabled>列出工作空间文件</button>
+      <select id="selComputed" style="flex:1"></select>
+      <input id="targetPath" type="text" placeholder="目标 RDF 路径 (*.dist.tgt)" style="flex:1" />
+      <button id="btnCompare" disabled>对比</button>
+    </div>
+    <div id="plot" style="height:320px"></div>
+  </div>
+</div>
+<script src="/js/index.js"></script>

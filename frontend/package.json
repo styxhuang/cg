@@ -1,0 +1,14 @@
+{
+  "name": "votca-frontend",
+  "version": "0.2.0",
+  "private": true,
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "ejs": "^3.1.9",
+    "express-ejs-layouts": "^2.5.1",
+    "http-proxy-middleware": "^3.0.0"
+  }
+}
